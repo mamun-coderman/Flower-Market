@@ -1,0 +1,43 @@
+/* common css starts here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* common css ends here */
+
+/* headed part for mobile starts here */
+
+header{
+    padding: 1rem;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo > img{
+    width: 4rem;
+}
+
+.menu-cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: none;
+}
+
+.cart > a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+    color: #000;
+    margin: auto 0;
+}
