@@ -156,8 +156,13 @@ header{
         flex: 1;
     }
 
+    .hero-photo > img{
+        padding: 0;
+    }
+
     .hero-content{
         flex: 1;
+        align-self:last baseline;
     }
 
 }
