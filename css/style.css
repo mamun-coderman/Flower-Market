@@ -6,6 +6,29 @@
     box-sizing: border-box;
 }
 
+:root {
+	--color: #e95a08;
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Noto Serif", sans-serif;
+}
+
+.heading-first{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.text-common{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 
 /* common css ends here */
 
@@ -27,17 +50,119 @@ header{
 .menu-cart{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu{
     display: none;
 }
 
+.cart > img{
+    width: 1.5rem;
+}
+
 .cart > a{
     text-decoration: none;
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 150%;
     color: #000;
-    margin: auto 0;
 }
+
+/* header part for mobile ends here */
+/* header part styes for desktop starts here */
+
+@media screen and (min-width: 768px) {
+    header{
+        padding: 2rem 9.37rem 0 9.37rem;
+    } 
+    
+    .logo > img{
+        width: 8rem;
+        height: 4.5rem;
+    }
+
+    .menu-cart{
+        gap: 3rem;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .menu > ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .menu > ul >li{
+        list-style: none;
+    }
+
+    .menu > ul > li > a{
+        text-decoration: none;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 150%;
+        color: #8987a1;
+    }
+
+    #home-fixed{
+        color:  #252432;
+    }
+
+}
+
+/* header part for desktop ends here */
+
+/* maint part starts here */
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-photo > img{
+    width: 100%;
+    padding: 1.75rem 0;
+}
+
+.hero-content{
+    padding: 0 1rem;
+}
+
+.hero-content > .heading-first > span{
+    color: var(--color);
+}
+
+.hero-content > .text-common{
+    margin-top: 0.75rem;
+}
+
+/* hero section for mobile ends here */
+
+/* hero section for desktop starts here */
+
+@media screen and (min-width: 768px) {
+    .hero-section{
+        flex-direction: row-reverse;
+        padding: 7.5rem 9.37rem;
+    }
+
+    .hero-photo{
+        flex: 1;
+    }
+
+    .hero-content{
+        flex: 1;
+    }
+
+}
+
+
+
+
+
