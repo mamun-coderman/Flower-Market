@@ -167,6 +167,77 @@ header{
 
 }
 
+/* hero section ends and our plants section for mobile starts */
+
+.our-plants-section{
+    margin-top: 4rem;
+    padding: 0 1rem;
+}
+
+.our-plants-section > .heading-first{
+    text-align: center;
+}
+
+.our-plants-section .text-common{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.heading-first > span{
+    color: var(--color);
+}
+
+.card-container{
+    margin-top: 1.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.785rem;
+}
+
+.card-photo > img{
+    width: 100%;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.785rem;
+}
+
+.card-content > h5{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #111;
+    text-align: center;
+}
+
+.card-content > h5 > span{
+    font-weight: 700;
+}
+
+.card-content > a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    background-color: var(--color);
+    padding: 1.25rem 0;
+}
+
+/* our plants for mobile ends and style for desktop starts here */
+
+
+
 
 
 
