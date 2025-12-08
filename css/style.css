@@ -154,6 +154,7 @@ header{
 
     .hero-photo{
         flex: 1;
+        align-self: last baseline;
     }
 
     .hero-photo > img{
@@ -162,7 +163,15 @@ header{
 
     .hero-content{
         flex: 1;
-        align-self:last baseline;
+        align-self: last baseline;
+    }
+
+    .hero-content > .heading-first{
+        font-size: 3.125rem;
+    }
+
+    .hero-content > .text-common{
+        font-size: 1.375rem;
     }
 
 }
@@ -235,6 +244,115 @@ header{
 }
 
 /* our plants for mobile ends and style for desktop starts here */
+
+@media screen and (min-width: 768px) {
+    .our-plants-section{
+        margin-top: 7.5rem;
+        padding: 0 9.3rem;
+    }
+
+    .our-plants-section > .heading-first{
+        font-size: 3.125rem;
+    }
+
+    .our-plants-section .text-common{
+        font-size: 1.375rem;
+        padding-top: 1rem;
+    }
+
+    .card-container{
+        margin-top: 3rem;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1.25rem;
+        row-gap: 1.875rem;
+    }
+
+}
+
+/* our plants for desktop ends here */
+
+/* flower store for mobile starts here */
+
+.flower-store-section{
+    margin-top: 2.5rem;
+    padding: 0 1rem;
+}
+
+.flower-store-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+
+.flower-photo{
+    flex: 1;
+}
+
+.flower-store-pic > img{
+    width: 100%;
+}
+
+#photo-badge{
+    display: none;
+}
+
+.flower-content{
+    flex: 1;
+}
+
+.flower-content > ul{
+    margin-left: 1rem;
+}
+
+.flower-content > ul  > li{
+    margin-top: 1rem;
+}
+
+/* flower store for mobile ends */
+
+/* flower store for desktop starts here */
+
+@media screen and (min-width: 768px) {
+    .flower-store-section{
+        margin-top: 13rem;
+        padding: 0 9.375rem;
+        margin-bottom: 3rem;
+    }
+
+    .flower-store-container{
+        flex-direction: row;
+        gap: 3.75rem;
+    }
+
+    .flower-store-pic > img{
+        height: 37.25rem;
+    }
+
+    #photo-badge{
+        display: flex;
+        width: 18rem;
+        position: relative;
+        top: -45.25rem;
+        left: -5.5rem;
+        
+    }
+
+    .flower-content{
+        height: 37.25rem;
+    }
+
+    .flower-content > .heading-first{
+        font-size: 3.125rem;
+    }
+
+    .flower-content > ul  > li{
+        margin-top: 1.25rem;
+        font-size: 1.375rem;
+    }
+
+}
+
+
 
 
 
