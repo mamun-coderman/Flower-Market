@@ -355,7 +355,107 @@ header{
 
 }
 
+/* flower store ends */
 
+/* deals section starts here */
+
+.deals-section{
+    text-align: center;
+    margin-top: 5rem;
+    padding: 0 1rem;
+}
+
+.deals-section > .text-common{
+    padding-top: 1rem;
+}
+
+.deals-galary{
+    display: grid;
+    row-gap: 1.25rem;
+    margin: 2.5rem 0;
+}
+
+.banner-1{
+    background-image: url(../assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.875rem;
+    height: 11.5rem;
+    position: relative;
+}
+
+.banner-2{
+    background-image: url(../assets/deal-ana.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.875rem;
+    height: 11.5rem;
+    position: relative;
+}
+
+.banner-3{
+    background-image: url(../assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.875rem;
+    height: 11.5rem;
+    position: relative;
+}
+
+.banner-1::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0.875rem;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.banner-2::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0.875rem;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.banner-3::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0.875rem;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.banner-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    height: 100%;
+    z-index: 1;
+}
+
+.banner-content > h2{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.banner-content > a{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+}
 
 
 
