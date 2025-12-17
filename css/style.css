@@ -561,7 +561,9 @@ footer {
     margin-bottom: 1rem;
 }
 
-
+.footer-logo>p>br {
+    display: none;
+}
 
 .footer-content-container ul {
     display: flex;
@@ -603,11 +605,11 @@ footer {
     text-decoration: underline;
 }
 
-.footer-social-link > a{
+.footer-social-link>a {
     text-decoration: none;
 }
 
-.footer-social-link > a > img{
+.footer-social-link>a>img {
     margin-right: 1.5rem;
 }
 
@@ -625,6 +627,10 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         gap: 1.25rem;
+    }
+
+    .footer-logo>p>br {
+        display: block;
     }
 
 }
