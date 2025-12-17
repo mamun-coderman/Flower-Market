@@ -1,28 +1,28 @@
 /* common css starts here */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root {
-	--color: #e95a08;
+    --color: #e95a08;
 }
 
 :root {
-  --font-family: "Inter", sans-serif;
-  --second-family: "Noto Serif", sans-serif;
+    --font-family: "Inter", sans-serif;
+    --second-family: "Noto Serif", sans-serif;
 }
 
-.heading-first{
+.heading-first {
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 1.5rem;
     color: #000;
 }
 
-.text-common{
+.text-common {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 1rem;
@@ -34,34 +34,34 @@
 
 /* headed part for mobile starts here */
 
-header{
+header {
     padding: 1rem;
 }
 
-.header-container{
+.header-container {
     display: flex;
     justify-content: space-between;
 }
 
-.logo > img{
+.logo>img {
     width: 4rem;
 }
 
-.menu-cart{
+.menu-cart {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu{
+.menu {
     display: none;
 }
 
-.cart > img{
+.cart>img {
     width: 1.5rem;
 }
 
-.cart > a{
+.cart>a {
     text-decoration: none;
     font-family: var(--font-family);
     font-weight: 400;
@@ -74,34 +74,34 @@ header{
 /* header part styes for desktop starts here */
 
 @media screen and (min-width: 768px) {
-    header{
+    header {
         padding: 2rem 9.37rem 0 9.37rem;
-    } 
-    
-    .logo > img{
+    }
+
+    .logo>img {
         width: 8rem;
         height: 4.5rem;
     }
 
-    .menu-cart{
+    .menu-cart {
         gap: 3rem;
     }
 
-    .menu{
+    .menu {
         display: flex;
     }
 
-    .menu > ul{
+    .menu>ul {
         display: flex;
         justify-content: space-between;
         gap: 3rem;
     }
 
-    .menu > ul >li{
+    .menu>ul>li {
         list-style: none;
     }
 
-    .menu > ul > li > a{
+    .menu>ul>li>a {
         text-decoration: none;
         font-family: var(--font-family);
         font-weight: 400;
@@ -110,8 +110,8 @@ header{
         color: #8987a1;
     }
 
-    #home-fixed{
-        color:  #252432;
+    #home-fixed {
+        color: #252432;
     }
 
 }
@@ -120,25 +120,25 @@ header{
 
 /* maint part starts here */
 
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
 }
 
-.hero-photo > img{
+.hero-photo>img {
     width: 100%;
     padding: 1.75rem 0;
 }
 
-.hero-content{
+.hero-content {
     padding: 0 1rem;
 }
 
-.hero-content > .heading-first > span{
+.hero-content>.heading-first>span {
     color: var(--color);
 }
 
-.hero-content > .text-common{
+.hero-content>.text-common {
     margin-top: 0.75rem;
 }
 
@@ -147,30 +147,30 @@ header{
 /* hero section for desktop starts here */
 
 @media screen and (min-width: 768px) {
-    .hero-section{
+    .hero-section {
         flex-direction: row-reverse;
         padding: 7.5rem 9.37rem;
     }
 
-    .hero-photo{
+    .hero-photo {
         flex: 1;
         align-self: last baseline;
     }
 
-    .hero-photo > img{
+    .hero-photo>img {
         padding: 0;
     }
 
-    .hero-content{
+    .hero-content {
         flex: 1;
         align-self: last baseline;
     }
 
-    .hero-content > .heading-first{
+    .hero-content>.heading-first {
         font-size: 3.125rem;
     }
 
-    .hero-content > .text-common{
+    .hero-content>.text-common {
         font-size: 1.375rem;
     }
 
@@ -178,48 +178,48 @@ header{
 
 /* hero section ends and our plants section for mobile starts */
 
-.our-plants-section{
+.our-plants-section {
     margin-top: 4rem;
     padding: 0 1rem;
 }
 
-.our-plants-section > .heading-first{
+.our-plants-section>.heading-first {
     text-align: center;
 }
 
-.our-plants-section .text-common{
+.our-plants-section .text-common {
     text-align: center;
     padding-top: 1rem;
 }
 
-.heading-first > span{
+.heading-first>span {
     color: var(--color);
 }
 
-.card-container{
+.card-container {
     margin-top: 1.75rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     gap: 1.785rem;
 }
 
-.card-photo > img{
+.card-photo>img {
     width: 100%;
 }
 
-.card-content{
+.card-content {
     display: flex;
     flex-direction: column;
     gap: 1.785rem;
 }
 
-.card-content > h5{
+.card-content>h5 {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 1rem;
@@ -228,11 +228,11 @@ header{
     text-align: center;
 }
 
-.card-content > h5 > span{
+.card-content>h5>span {
     font-weight: 700;
 }
 
-.card-content > a{
+.card-content>a {
     text-decoration: none;
     font-family: var(--font-family);
     font-weight: 600;
@@ -246,21 +246,21 @@ header{
 /* our plants for mobile ends and style for desktop starts here */
 
 @media screen and (min-width: 768px) {
-    .our-plants-section{
+    .our-plants-section {
         margin-top: 7.5rem;
         padding: 0 9.3rem;
     }
 
-    .our-plants-section > .heading-first{
+    .our-plants-section>.heading-first {
         font-size: 3.125rem;
     }
 
-    .our-plants-section .text-common{
+    .our-plants-section .text-common {
         font-size: 1.375rem;
         padding-top: 1rem;
     }
 
-    .card-container{
+    .card-container {
         margin-top: 3rem;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 1.25rem;
@@ -273,38 +273,38 @@ header{
 
 /* flower store for mobile starts here */
 
-.flower-store-section{
+.flower-store-section {
     margin-top: 2.5rem;
     padding: 0 1rem;
 }
 
-.flower-store-container{
+.flower-store-container {
     display: flex;
     flex-direction: column;
     gap: 1.125rem;
 }
 
-.flower-photo{
+.flower-photo {
     flex: 1;
 }
 
-.flower-store-pic > img{
+.flower-store-pic>img {
     width: 100%;
 }
 
-#photo-badge{
+#photo-badge {
     display: none;
 }
 
-.flower-content{
+.flower-content {
     flex: 1;
 }
 
-.flower-content > ul{
+.flower-content>ul {
     margin-left: 1rem;
 }
 
-.flower-content > ul  > li{
+.flower-content>ul>li {
     margin-top: 1rem;
 }
 
@@ -313,42 +313,42 @@ header{
 /* flower store for desktop starts here */
 
 @media screen and (min-width: 768px) {
-    .flower-store-section{
+    .flower-store-section {
         margin-top: 13rem;
         padding: 0 9.375rem;
         margin-bottom: 3rem;
     }
 
-    .flower-store-container{
+    .flower-store-container {
         flex-direction: row;
         gap: 3.75rem;
     }
 
-    .flower-photo{
+    .flower-photo {
         position: relative;
     }
 
-    .flower-store-pic > img{
+    .flower-store-pic>img {
         height: 37.25rem;
     }
 
-    #photo-badge{
+    #photo-badge {
         display: block;
         width: 18rem;
         position: absolute;
         top: -7rem;
-        right: -5rem; 
+        right: -5rem;
     }
 
-    .flower-content{
+    .flower-content {
         height: 37.25rem;
     }
 
-    .flower-content > .heading-first{
+    .flower-content>.heading-first {
         font-size: 3.125rem;
     }
 
-    .flower-content > ul  > li{
+    .flower-content>ul>li {
         margin-top: 1.25rem;
         font-size: 1.375rem;
     }
@@ -359,23 +359,23 @@ header{
 
 /* deals section starts here */
 
-.deals-section{
+.deals-section {
     text-align: center;
     margin-top: 5rem;
     padding: 0 1rem;
 }
 
-.deals-section > .text-common{
+.deals-section>.text-common {
     padding-top: 1rem;
 }
 
-.deals-galary{
+.deals-galary {
     display: grid;
     row-gap: 1.25rem;
     margin-top: 3rem;
 }
 
-.banner-1{
+.banner-1 {
     background-image: url(../assets/deal-bloom.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -385,7 +385,7 @@ header{
     position: relative;
 }
 
-.banner-2{
+.banner-2 {
     background-image: url(../assets/deal-ana.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -395,7 +395,7 @@ header{
     position: relative;
 }
 
-.banner-3{
+.banner-3 {
     background-image: url(../assets/deal-zabo.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -405,7 +405,7 @@ header{
     position: relative;
 }
 
-.banner-1::after{
+.banner-1::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -414,7 +414,7 @@ header{
     z-index: 0;
 }
 
-.banner-2::after{
+.banner-2::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -423,7 +423,7 @@ header{
     z-index: 0;
 }
 
-.banner-3::after{
+.banner-3::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -432,7 +432,7 @@ header{
     z-index: 0;
 }
 
-.banner-content{
+.banner-content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -443,14 +443,14 @@ header{
     z-index: 1;
 }
 
-.banner-content > h2{
+.banner-content>h2 {
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 1.25rem;
     color: #fff;
 }
 
-.banner-content > a{
+.banner-content>a {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 1rem;
@@ -462,13 +462,13 @@ header{
 /* our deals section styles for desktop starts here */
 
 @media screen and (min-width: 768px) {
-    .deals-section{
+    .deals-section {
         text-align: center;
         margin-top: 8.5rem;
         padding: 0 9.375rem;
     }
 
-    .deals-galary{
+    .deals-galary {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr;
@@ -477,19 +477,19 @@ header{
         margin-top: 7.5rem;
     }
 
-    .banner-3{
+    .banner-3 {
         grid-column: 2/3;
         grid-row: 1 / 3;
         height: auto;
         min-height: calc(11.5rem*2 + 1.5rem);
-        
+
     }
 
-    .banner-3 > .banner-content > h2{
+    .banner-3>.banner-content>h2 {
         font-size: 2.5rem;
     }
 
-    .banner-3 > .banner-content > a{
+    .banner-3>.banner-content>a {
         font-size: 1.75rem;
     }
 
@@ -497,7 +497,7 @@ header{
 
 /* latest deals section ends and newsletter section starts here */
 
-.newsletter-section{
+.newsletter-section {
     margin-top: 2.75rem;
     background-image: url(/assets/news-letter-bg.png);
     background-repeat: no-repeat;
@@ -510,17 +510,17 @@ header{
     align-items: center;
 }
 
-.newsletter-section > h1{
+.newsletter-section>h1 {
     color: #fff;
     margin-bottom: 1.5rem;
 }
 
-.subscribe-box{
+.subscribe-box {
     display: flex;
 }
 
 
-.subscribe-box input{
+.subscribe-box input {
     padding: 0.5rem 1.25rem;
     border: none;
     font-size: 1rem;
@@ -529,11 +529,11 @@ header{
     color: rgba(0, 0, 0, 0.4);
 }
 
-.subscribe-box input::placeholder{
+.subscribe-box input::placeholder {
     color: rgba(0, 0, 0, 0.4);
 }
 
-.subscribe-box > button{
+.subscribe-box>button {
     padding: 0.5rem 1.25rem;
     border: none;
     font-family: var(--font-family);
@@ -545,12 +545,88 @@ header{
 
 /* newsletter section's code is same for mobile and desktop version and its end here */
 
+/* footer section starts here */
+
+footer {
+    margin: 3.125rem 1rem;
+}
+
+.footer-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-logo>img {
+    margin-bottom: 1rem;
+}
 
 
 
+.footer-content-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.footer-menu>ul>li {
+    list-style: none;
+}
 
+.service-links>ul>li {
+    list-style: none;
+}
 
+.footer-menu>ul>li>a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #6b7280;
+}
 
+.footer-menu>ul>li>a:hover {
+    text-decoration: underline;
+}
 
+.service-links>ul>li>a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #6b7280;
+}
 
+.service-links>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-link > a{
+    text-decoration: none;
+}
+
+.footer-social-link > a > img{
+    margin-right: 1.5rem;
+}
+
+/* footer section for mobile ends here */
+
+/* footer style for desktop starts here */
+
+@media screen and (min-width: 768px) {
+    footer {
+        margin: 3.125rem 10rem;
+    }
+
+    .footer-content-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1.25rem;
+    }
+
+}
+
+/* footer section ends here */
