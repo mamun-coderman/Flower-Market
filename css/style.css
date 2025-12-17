@@ -495,6 +495,59 @@ header{
 
 }
 
+/* latest deals section ends and newsletter section starts here */
+
+.newsletter-section{
+    margin-top: 2.75rem;
+    background-image: url(/assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 16.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-section > h1{
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.subscribe-box{
+    display: flex;
+}
+
+
+.subscribe-box input{
+    padding: 0.5rem 1.25rem;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.subscribe-box input::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.subscribe-box > button{
+    padding: 0.5rem 1.25rem;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--color);
+}
+
+/* newsletter section's code is same for mobile and desktop version and its end here */
+
+
+
+
 
 
 
